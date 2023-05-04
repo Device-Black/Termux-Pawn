@@ -22,7 +22,7 @@ mv termux-pawn/PawnCC /sdcard
 mv termux-pawn/libpawnc.so /lib
 mv termux-pawn/pawncc /bin
 mv termux-pawn/compile.sh $HOME
-rm -rf termux-pawn
+rm -rf termux-pawn && clear
 echo -e "\nUso: ./compile.sh <arquivo>\n"
 ```
 
