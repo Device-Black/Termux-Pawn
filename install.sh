@@ -12,9 +12,7 @@ mv 'fix-includes/*' '/sdcard/PawnCC/include'
 chmod +x compile.sh && chmod +x *pawn*
 
 # Mover arquivos
-mv compile.sh '/bin/' && mv pawncc '/bin/'
-mv libpawnc.so '/lib/' && mv bash.bashrc '/etc/'
+mv compile.sh $HOME && mv pawncc '/bin/' && mv libpawnc.so '/lib/'
 
-# Atualizar comandos
-source '/etc/bash.bashrc'
-echo -e "\nUso: $0 <arquivo>\n"
+# Exibir comando
+echo -e "\nUso: ./compile.sh <arquivo>\n"
