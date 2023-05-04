@@ -1,2 +1,3 @@
-#!/bin/bas
+#!/bin/bash
+
 ls -a
