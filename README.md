@@ -24,7 +24,8 @@ mv termux-pawn/pawncc /bin/
 
 <b>Compilar Gamemode:</b>
 ```bash
-pawncc /sdcard/Downloads/minhagm.pwn -C+ -\(+ -\;+ -O0 -i:/sdcard/Downloads/include/ -e:/sdcard/Downloads/errors.txt
+cd /sdcard/Download
+pawncc minhagm.pwn '-C+' '-(+' '-;+' -O0 -i:./include/ -e:./errors.txt
 ```
 Dessa forma o termux irá tentar compilar o script “minhagm.pwn” localizado na pasta “Downloads”
 caso falhe irá gerar um arquivo chamado “errors.txt”.
