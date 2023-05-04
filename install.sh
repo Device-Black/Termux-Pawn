@@ -1,3 +1,3 @@
 #!/bin/bash
 
-chmod +x termux-pawn/*
+ls
