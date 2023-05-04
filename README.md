@@ -17,7 +17,13 @@ proot-distro login ubuntu
 apt update -y && apt upgrade -y
 apt install git -y
 git clone https://github.com/device-black/termux-pawn.git
-bash termux-pawn/install.sh
+chmod +x termux-pawn/*
+mv termux-pawn/PawnCC /sdcard
+mv termux-pawn/libpawnc.so /lib
+mv termux-pawn/pawncc /bin
+mv termux-pawn/compile.sh $HOME
+rm -rf termux-pawn && clear
+echo -e "\nUtilize: ./compile.sh <arquivo.pwn>\n"
 ```
 
 <b>Compilar Gamemode:</b>
