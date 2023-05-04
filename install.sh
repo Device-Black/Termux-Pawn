@@ -1,18 +1,16 @@
 #!/bin/bash
 
-# Criar a pasta PawnCC e include
-mkdir '/sdcard/PawnCC' 2>'/dev/null'
-mkdir '/sdcard/PawnCC/include' 2>'/dev/null'
-
-# Instalar includes atualizadas
-git clone https://github.com/device-black/fix-includes.git
-mv 'fix-includes/*' '/sdcard/PawnCC/include'
+# Mover a pasta PawnCC
+mv $HOME'/termux-pawn/PawnCC' '/sdcard/'
 
 # Definir permissoes
-chmod +x compile.sh && chmod +x *pawn*
+chmod +x $HOME'/termux-pawn/compile.sh'
+chmod +x $HOME'/termux-pawn/libpawnc.so'
+chmod +x $HOME'/termux-pawn/pawncc'
 
 # Mover arquivos
-mv compile.sh $HOME && mv pawncc '/bin/' && mv libpawnc.so '/lib/'
+mv $HOME'/termux-pawn/compile.sh' $HOME
+mv pawncc '/bin/' && mv libpawnc.so '/lib/'
 
 # Exibir comando
 echo -e "\nUso: ./compile.sh <arquivo>\n"
