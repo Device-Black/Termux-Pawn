@@ -11,5 +11,6 @@ mv termux-pawn/libpawnc.so /lib
 mv termux-pawn/pawncc /bin
 mv termux-pawn/compile.sh $HOME
 
-# Exibir comando
+# Finalizar
+rm -rf termux-pawn
 echo -e "\nUso: ./compile.sh <arquivo>\n"
