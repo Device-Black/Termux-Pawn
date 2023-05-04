@@ -22,9 +22,9 @@ bash termux-pawn/install.sh
 
 <b>Compilar Gamemode:</b>
 ```bash
-.compile.sh minhagm.pwn
+.compile.sh new.pwn
 ```
-Dessa forma o termux irá tentar compilar o script “minhagm.pwn” localizado na pasta “/storage/emulated/0/PawnCC”
+Dessa forma o termux irá tentar compilar o script “new.pwn” localizado na pasta “/storage/emulated/0/PawnCC”
 caso falhe irá gerar um arquivo chamado “errors.txt”.
 
 Caso você encerre o termux e queira abrir novamente, utilize: 
