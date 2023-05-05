@@ -28,7 +28,7 @@ echo -e "\nUtilize: ./compile.sh <arquivo.pwn>\n"
 
 <b>Compilar Gamemode:</b>
 ```bash
-.compile.sh new.pwn
+./compile.sh new.pwn
 ```
 Dessa forma o termux irá tentar compilar o script “new.pwn” localizado na pasta “/storage/emulated/0/PawnCC”
 caso falhe irá gerar um arquivo chamado “errors.txt”.
