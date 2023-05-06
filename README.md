@@ -39,4 +39,4 @@ proot-distro login ubuntu
 ```
 
 # Observação
-<i>Método testado apenas em dispositivos com armeabi-v7a disponível, verifique o seu!<i>
+<i>Método testado apenas em dispositivos com <b>armeabi-v7a</b> disponível, verifique o seu!<i>
