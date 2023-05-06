@@ -15,20 +15,13 @@ proot-distro login ubuntu
 <b>Instalar PAWN COMPILER:</b>
 ```bash
 apt update -y && apt upgrade -y
-apt install git -y
-git clone https://github.com/device-black/termux-pawn.git
-chmod +x termux-pawn/*
-mv termux-pawn/PawnCC /sdcard
-mv termux-pawn/libpawnc.so /lib
-mv termux-pawn/pawncc /bin
-mv termux-pawn/compile.sh $HOME
-rm -rf termux-pawn && clear
-echo -e "\nUtilize: ./compile.sh <arquivo.pwn>\n"
+apt install python3.11 -y
+curl -
 ```
 
 <b>Compilar Gamemode:</b>
 ```bash
-./compile.sh new.pwn
+./compile.py new.pwn
 ```
 Dessa forma o termux irá tentar compilar o script “new.pwn” localizado na pasta “/storage/emulated/0/PawnCC”
 caso falhe irá gerar um arquivo chamado “errors.txt”.
