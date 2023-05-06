@@ -26,6 +26,7 @@ def Extrair_Arquivos():
 	try:
 		print('Extraindo "termux-pawn.zip", aguarde...')
 		zipfile.ZipFile("termux-pawn.zip", 'r').extractall("./")
+		os.remove("termux-pawn.zip")
 		print('Extracao concluida!')
 	except zipfile.BadZipFile:
 		print("Erro ao extrair arquivo ZIP: arquivo invalido.")
@@ -33,7 +34,7 @@ def Extrair_Arquivos():
 		print("Erro ao extrair arquivo ZIP: arquivo muito grande.")
 	except:
 		print("Erro ao extrair arquivo ZIP: erro desconhecido.")
-	
+
 	if os.path.exists("Termux-Pawn-DeviceBlack"):
 		return True
 	else:
