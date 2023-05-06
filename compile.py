@@ -26,7 +26,6 @@ def Extrair_Arquivos():
 	try:
 		print('Extraindo "termux-pawn.zip", aguarde...')
 		zipfile.ZipFile("termux-pawn.zip", 'r').extractall("./")
-		os.remove("termux-pawn.zip")
 		print('Extracao concluida!')
 	except zipfile.BadZipFile:
 		print("Erro ao extrair arquivo ZIP: arquivo invalido.")
@@ -34,7 +33,7 @@ def Extrair_Arquivos():
 		print("Erro ao extrair arquivo ZIP: arquivo muito grande.")
 	except:
 		print("Erro ao extrair arquivo ZIP: erro desconhecido.")
-
+	
 	if os.path.exists("Termux-Pawn-DeviceBlack"):
 		return True
 	else:
@@ -112,8 +111,9 @@ def main():
 	Verificar_Sistema()
 
 	if len(sys.argv) < 2:
-		print("Autor: github.com/Device-Black")
-		print("Utilize: ./compile.py <filename.pwn>")
+		print("\n\nUtilize: ./compile.py <filename.pwn>\n\n")
+	elif sys.argv[1] == '-V':
+		print("\n\nAutor: github.com/Device-Black\n\n")
 	else:
 		arquivo_pwn = sys.argv[1]
 		arquivo_amx = f"{arquivo_pwn[:-3]}amx"
