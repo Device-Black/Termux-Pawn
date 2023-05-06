@@ -16,7 +16,8 @@ proot-distro login ubuntu
 ```bash
 apt update -y && apt upgrade -y
 apt install python3.11 -y
-curl -
+curl -O https://raw.githubusercontent.com/Device-Black/Termux-Pawn/DeviceBlack/compile.py
+chmod +x compile.py && ./compile.py -V
 ```
 
 <b>Compilar Gamemode:</b>
