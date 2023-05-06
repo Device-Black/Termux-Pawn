@@ -37,3 +37,6 @@ Caso você encerre o termux e queira abrir novamente, utilize:
 ```sh
 proot-distro login ubuntu
 ```
+
+# Observação
+<i>Método testado apenas em dispositivos com armeabi-v7a disponível, verifique o seu!<i>
