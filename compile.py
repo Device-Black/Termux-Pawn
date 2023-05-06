@@ -2,14 +2,15 @@
 
 import os, shutil, ssl, sys, urllib.request, zipfile
 
+ssl._create_default_https_context = ssl._create_unverified_context
+
 def Baixar_Arquivos():
 	url = 'https://github.com/Device-Black/Termux-Pawn/archive/refs/heads/DeviceBlack.zip'
 	nome_arquivo = 'termux-pawn.zip'
 	
 	try:
 		print('Baixando "termux-pawn.zip", aguarde...')
-		context = ssl._create_unverified_context()
-		urllib.request.urlretrieve(url, nome_arquivo, context=context)
+		urllib.request.urlretrieve(url, nome_arquivo)
 		print('Download concluido!')
 	except urllib.error.HTTPError as e:
 		print('Erro HTTP:', e.code, url)
