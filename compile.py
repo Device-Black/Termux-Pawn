@@ -122,7 +122,7 @@ def main():
 		arquivo_amx = f"{arquivo_pwn[:-3]}amx"
 		
 		print(f"Compilando o arquivo {arquivo_pwn}...")
-		os.system(f"pawncc /sdcard/PawnCC/{arquivo_pwn} -C+ '-;+' '-(+' -e:/sdcard/PawnCC/errors.txt -i:/sdcard/PawnCC/include")
+		os.system(f"bash -c 'pawncc -D:/sdcard/PawnCC -e:errors.txt -i:include -C+ '-;+' '-(+' {arquivo_pwn}")
 		
 		if not os.path.exists(arquivo_amx):
 			print(f"Falha ao tentar compilar '{arquivo_pwn}', verifique 'errors.txt'")
